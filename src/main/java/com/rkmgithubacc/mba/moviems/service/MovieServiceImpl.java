@@ -110,10 +110,11 @@ public class MovieServiceImpl implements MovieService {
 //        theatreUriMap.put("theatreId", String.valueOf(theatre.getTheatreId()));
 //        theatreUriMap.put("movieId", String.valueOf(theatre.getMovieId()));
         //Theatre receivedTheatre = restTemplate.getForObject(theatreAppUrl, Theatre.class, theatreUriMap);
-        Theatre receivedTheatre = theatreServiceClient.getTheatre(theatre.getTheatreId(), theatre.getMovieId());
-        if (receivedTheatre == null) {
-            System.out.println("Requested theatre-movie combination not found");
-        }
-        return receivedTheatre != null;
+//        Theatre receivedTheatre = theatreServiceClient.getTheatre(theatre.getTheatreId(), theatre.getMovieId());
+//        if (receivedTheatre == null) {
+//            System.out.println("Requested theatre-movie combination not found");
+//        }
+//        return receivedTheatre != null;
+        return true;
     }
 }
