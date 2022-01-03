@@ -22,9 +22,9 @@ public class MovieServiceImpl implements MovieService {
     
     @Value("${userService.url}")
     private String userAppUrl;
-    
-    @Value("${theatreService.url}")
-    private String theatreAppUrl;
+
+//    @Value("${theatreService.url}")
+//    private String theatreAppUrl;
     
     public MovieServiceImpl(MovieDAO movieDAO, RestTemplate restTemplate, TheatreServiceClient theatreServiceClient) {
         this.movieDAO = movieDAO;
