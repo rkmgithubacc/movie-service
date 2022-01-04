@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 //@FeignClient(name = "theatre-service-client", url = "http://localhost:8082")
 //@FeignClient(name = "theatre-service-client", url = "${theatreService.address}")
-@FeignClient(name = "THEATRE-SERVICE")
+@FeignClient(name = "MBA-API-GATEWAY")
 public interface TheatreServiceClient {
     @GetMapping(value = "${theatreService.bookMoviePath}")
 //    @RequestMapping(value = "/theatre_service/v1/theatres/{theatreId}/movie/{movieId}", method = RequestMethod.GET)
